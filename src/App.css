@@ -1,0 +1,115 @@
+/* جعل التطبيق يعمل بشكل مرن على جميع الشاشات */
+.App {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%); /* خلفية متدرجة */
+  padding: 20px;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* تحسين شكل الترويسة */
+.App-header {
+  background: rgba(255, 255, 255, 0.3); /* تأثير الزجاج */
+  backdrop-filter: blur(10px); /* تمويه الخلفية */
+  color: #333;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
+  margin-bottom: 30px;
+  width: 100%;
+  max-width: 600px;
+}
+
+.App-header h1 {
+  font-size: 2.5rem;
+  color: #fff; /* لون النص */
+}
+
+/* تنسيق رابط التطبيق */
+.App-link {
+  color: #61dafb;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* تحسين شكل المهام */
+.todo-list {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.todo-item {
+  background: rgba(255, 255, 255, 0.5); /* تأثير زجاجي على المهام */
+  backdrop-filter: blur(10px);
+  padding: 15px;
+  border-radius: 12px;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+.todo-item:hover {
+  transform: scale(1.03); /* تأثير التكبير عند التمرير */
+}
+
+.todo-item.completed {
+  text-decoration: line-through;
+  color: #b0b0b0;
+}
+
+.todo-button {
+  background-color: #ff6363; /* لون عصري للأزرار */
+  border: none;
+  padding: 8px 12px;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.todo-button:hover {
+  background-color: #ff4757;
+}
+
+/* إدخال المهام */
+input[type="text"] {
+  padding: 12px;
+  width: 80%;
+  border: 2px solid #61dafb;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  font-size: 1rem;
+  transition: all 0.3s ease-in-out;
+}
+
+input[type="text"]:focus {
+  outline: none;
+  border-color: #00bfff;
+  box-shadow: 0 4px 20px rgba(0, 191, 255, 0.2);
+}
+
+/* جعل التطبيق مرنًا على الشاشات الصغيرة */
+@media (max-width: 768px) {
+  .App-header {
+    font-size: 1.5rem;
+  }
+
+  .todo-list {
+    width: 90%;
+  }
+
+  .todo-item {
+    padding: 10px;
+  }
+}

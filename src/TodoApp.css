@@ -1,0 +1,43 @@
+/* TodoApp.css */
+
+.todo-container {
+    padding: 20px;
+  }
+  
+  .todo-container h1 {
+    color: #ff0000;
+  }
+  
+  .todo-container input {
+    padding: 10px;
+    font-size: 16px;
+    margin-right: 10px;
+  }
+  
+  .todo-container button {
+    padding: 10px 30px;
+    background-color: #56d53d;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .todo-container button:hover {
+    background-color: #7df575;
+  }
+  
+  .todo-container ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .todo-container li {
+    padding: 30px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .todo-container li.completed {
+    text-decoration: line-through;
+    color: #e41313;
+  }
+  
