@@ -1,4 +1,25 @@
-# Getting Started with Create React App
+# To-Do App
+
+This is a simple and user-friendly To-Do application built with React.js. 
+
+## Features:
+- Add new tasks to your to-do list.
+- Mark tasks as completed or undo them.
+- Delete tasks from the list.
+- Responsive design that works on all devices.
+
+## How to Use:
+1. Type a new task into the input field.
+2. Click "Add Task" to add it to your list.
+3. Mark tasks as completed or delete them as needed.
+
+This app is designed to help you stay organized and productive by managing your daily tasks effectively.
+
+
+
+
+Q: How To run the project ???
+Ans: # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
